@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/css/tab.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="/static/css/reset.css" rel="stylesheet"/>
+    <link href="/static/css/header.css" rel="stylesheet"/>
+    <link href="/static/css/body.css" rel="stylesheet"/>
+    <link href="/static/css/plugins.css" rel="stylesheet"/>
+    <link href="/static/css/public.css" rel="stylesheet"/>
+    <link href="/static/css/qq_face.css" rel="stylesheet"/>
+    <script src="/static/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<div class="out_layer">
+    <!--遮罩层-->
+    <div class="shadow hide"></div>
+    <!--/遮罩层结束-->
+
+    <!--头部导航部分开始-->
+    <div class="pg-header" >
+        <div class="nav_header">
+            <div class="nv_header clearfix">
+                <div class="gn_logo" >
+	                <a href="#" class="box">
+                        <span class="logo"></span>
+                    </a>
+                 </div>
+                <div class=" gn_search">
+                    <!--<span id="search_placeholder" class=" placeholder" style="display: block">大家正在搜：一直播</span>-->
+                    <input type="text" id="search_input" value="" class="W_input" placeholder="大家正在搜：一直播">
+                    <a href="javascript:void(0);"  class="W_ficon ficon_search S_ficon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <!--搜索热词下拉-->
+                    <div class="gn_topmenulist_search" style="display: none" id="select_option">
+                        <div class="gn_topmenulist">
+                            <div node-type="basic"></div>
+                            <div node-type="plus">
+                                <ul class="select_box">
+                                    <li>a</li>
+                                    <li>b</li>
+                                    <li>c</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/搜索热词下拉-->
+                </div>
+                <div class="gn_position">
+                    <div class="gn_nav">
+                        <ul class="gn_nav_list">
+		                    <li>
+                                <a href="#" class="home S_txt1" >
+                                    <em class="fa fa-home fa-fw" aria-hidden="true">&nbsp;</em>
+                                    <em class="S_txt1">首页</em>
+                                </a>
+                            </li>
+                    	    <li>
+                                <a href="#" class="S_txt1" >
+                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                    <em class="S_txt1">视频</em>
+                                </a>
+                            </li>
+		                    <li>
+                                <a href="#" class="S_txt1" >
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                    <em class="S_txt1">发现</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="S_txt1" >
+                                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                                    <em class="S_txt1">游戏</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gn_name" suda-uatrack="key=topnav_tab&amp;value=profile">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <em class="S_txt1">{{ session.name }}</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gn_set S_line1">
+                          <div class="gn_set_list">
+                              <a href="javascript:void(0);" style="font-size: 14px;">
+                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              </a>
+                              <div class="gn_topmenulist gn_topmenulist_notice hide"  >
+                                  <!--tip start-->
+                                  <ul>
+                                      <li><a bpfilter="message" href="#">@我的</a></li>
+                                      <li><a bpfilter="message" href="#">评论</a></li>
+                                      <li><a bpfilter="message" href="#">赞</a></li>
+                                      <li class="line S_line2"></li>
+                                      <li><a bpfilter="message" href="#">私信</a></li>
+                                      <li><a bpfilter="message" href="#">未关注人私信</a></li>
+                                      <li><a bpfilter="message" href="#">群通知</a></li>
+                                      <li class="line S_line1"></li>
+                                      <li class="gn_func"><a href="#">消息设置</a></li>
+                                  </ul>
+                                  <div class="W_layer_arrow">
+                                      <span class="W_arrow_bor W_arrow_bor_t">
+                                          <i class="S_line3"></i>
+                                          <em class="S_bg2_br"></em>
+                                      </span>
+                                  </div>
+                                  <!--tip end-->
+                              </div>
+                              <div class="gn_topmenulist gn_topmenulist_notice" style="display:none"></div>
+                          </div>
+                          <div class="gn_set_list">
+                              <a style="font-size: 14px;">
+                                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                              </a>
+                            <div class="gn_topmenulist gn_topmenulist_set hide">
+                                <!--data start-->
+                                <ul class="hide">
+                                    <li><a href="#">帐号设置</a></li>
+                                    <li><a href="#">会员中心</a></li>
+                                    <li><a href="#">V认证</a></li>
+                                    <li><a href="#">帐号安全</a></li>
+                                    <li><a href="#">隐私设置</a></li>
+                                    <li><a href="#">消息设置</a></li>
+                                    <li><a href="#">帮助中心</a></li>
+                                    <li class="line S_line1"></li>
+                                    <li class="gn_func"><a href="#">退出</a></li>
+                                </ul>
+                                <div class="W_layer_arrow hide">
+                                    <span class="W_arrow_bor W_arrow_bor_t">
+                                        <i class="S_line3"></i>
+                                        <em class="S_bg2_br"></em>
+                                    </span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="gn_set_list">
+                              <a style="font-size: 14px;" href="javascript:void(0);">
+                                  <i class="fa fa-cog" aria-hidden="true" title="试一下键盘N键？"></i>
+                              </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部导航部分结束-->
+
+    <div class="pg-body clearfix">
+        <div class="WB_frame">
+            <!--左侧导航-->
+            <div class="WB_main1">
+                <div id="v6_pl_leftnav_group">
+                    <div style="visibility: hidden;"></div>
+                    <div class="login_left_nav W_fixed_top">
+                        <div class="WB_left_nav WB_left_nav_Atest">
+                            <div class="lev_Box lev_Box_noborder">
+                                <h3 class="lev">
+                                    <a href="#" class="S_txt1" >
+                                    <span class="levtxt">首页</span>
+                                        <i class="W_new W_new_ani">
+                                            <i>新微博</i>
+                                        </i>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="lev_Box lev_Box_noborder">
+                                <h3 class="lev">
+                                    <a href="#" class="S_txt1" ><span class="levtxt">我的收藏</span></a>
+                                </h3>
+                            </div>
+                            <div class="lev_Box lev_Box_noborder">
+                                <h3 class="lev"><a href="#" class="S_txt1" ><span class="levtxt">我的赞</span>
+                                    <i class="W_new" like-dot="likeDot" style="display: none;"></i></a>
+                                </h3>
+                            </div>
+                            <div class="lev_line lev_line_v2"><fieldset></fieldset></div>
+                            <div class="lev_Box lev_Box_noborder">
+                                <div class="lev">
+                                    <a href="#" class="S_txt1">
+                                        <span class="ico_block">
+                                            <i class="fa fa-fire ficon_hot" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="levtxt">热门微博</span><i class="W_new"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lev_line">
+                                <fieldset>
+                                    <legend>
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </legend>
+                                </fieldset>
+                            </div>
+                            <div class="leftnav_scroll" style="height: 142px;">
+                                <div class="lev_Box">
+                                    <div class="lev">
+                                        <a href="#" title="好友圈" class="S_txt1" >
+                                            <span class="ico_block">
+                                                <i class="fa fa-gratipay" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="levtxt">好友圈</span>
+                                        </a>
+                                    </div>
+                                    <div node-type="system_list">
+                                        <div class="lev">
+                                            <a href="#" class="S_txt1">
+                                                <span class="ico_block">
+                                                    <i class="fa fa-tree" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="levtxt">特别关注</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/左侧导航结束 -->
+            <div id="unlogin_main" style="margin-left: 150px;">
+                <div class="WB_frame_c">
+                    <!--发布框-->
+                    <div id="v6_pl_content_publishertop">
+                        <div class="send_weibo S_bg2 clearfix">
+                            <div class="title_area clearfix">
+                                <div class="title">
+                                    <span class="txt">What’s new with you?</span>
+                                    <p class="W_swficon ficon_swtxt">
+                                        <em class="spac1">有什么新</em><em class="spac2">鲜</em><em class="spac3">事想告诉大家</em><em class="spac4">?</em>
+                                    </p>
+                                </div>
+                                <div id="countNum" class="num S_txt2"  style="display:block;">还可以输入
+                                    <span id="num">140</span>字
+                                </div>
+                            </div>
+                            <div class="input">
+                                <textarea id="saytext" class="W_input input_text" name="" onkeyup="countNum(this)"></textarea>
+                                <div class="send_succpic" style="display:none">
+                                    <span class="W_icon icon_succB"></span>
+                                    <span class="txt">发布成功</span>
+                                </div>
+                                <form style="display:none;" >
+                                    <input name="pollid">
+                                    <input name="pub_source">
+                                </form>
+                            </div>
+                            <div class="func_area clearfix">
+                                <div class="func">
+                                    <div class="limits">
+                                        <a class="S_txt1" href="javascript:void(0)" onclick="return false" title="公开-你发表的微博可以被大家公开查看哦">
+                                            <span class="W_autocut">公开</span>
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="W_btn_a btn_30px W_btn_a_disable" title="发布微博按钮">发布</a>
+                                </div>
+                                <div class="kind">
+                                    <a class="S_txt1" id="qq_face" href="javascript:void(0);" title="表情">
+                                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                        表情
+                                    </a>
+                                    <a class="S_txt1" id="publish" href="javascript:void(0);" >
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>图片
+                                    </a>
+                                    <a class="S_txt1" href="javascript:void(0);" >
+                                        <i class="fa fa-video-camera" aria-hidden="true">&nbsp;</i>视频
+                                    </a>
+                                    <a class="S_txt1" href="javascript:void(0);" >
+                                        <i class="fa fa-arrows" aria-hidden="true"></i>话题
+                                    </a>
+                                    <a class="S_txt1" href="#" title="头条文章">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>头条文章
+                                    </a>
+                                    <a style="line-height: 23px" href="javascript:void(0);" title="查看更多">…</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--发布框结束-->
+                    <div id="pl_unlogin_home_feed">
+                        <!--热门加载框-->
+                        <div class="WB_cardwrap unlogin_notes hide_style">
+                            <span class="wrap"><i class="W_loading"></i>推荐中...</span>
+                        </div>
+                        <!--/热门加载框结束-->
+                        <div class="PCD_pictext_i PCD_pictext_i_v5 ">
+                            <!--新消息提示框-->
+                            <div  class="WB_cardwrap unlogin_notes unlogin_notes_sm" style="position:fixed; top:50px;display: none">
+                                <a class="txt" href="javascript:void(0);" action-type="read">您有未读内容，点击查看</a>
+                                <a href="javascript:void(0);" class="W_ficon ficon_close S_ficon closed" action-type="close">X</a>
+                            </div>
+                            <!--/新消息提示框结束-->
+                            <div class="WB_innerwrap">
+                                <div class="m_wrap">
+                                    <div id="publish_news" class="WB_cardwrap WB_feed_type S_bg2">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="WB_main_r">
+                    <div style="visibility: hidden;"></div>
+                    <div id="v6_pl_rightmod_myinfo">
+                        <div class="WB_cardwrap S_bg2">
+                            <div class="W_person_info">
+                              <div class="cover" id="skin_cover_s">
+                                <div class="headpic">
+                                    <form  method= "post" enctype ="multipart/form-data">
+                                    <input type="hidden" value="{{ session.user_id }}" name="user_id">
+                                    <a bpfilter="page_frame" href="#" title="昵称叫什么12" style="position: relative">
+                                        <img id="head_img" class="W_face_radius" src="{{ session.user_head }}" width="60" height="60">
+                                        <input  type="file" id="head_file" name="head_file" style="opacity:0;display: inline-block;width: 60px;height: 60px;position:absolute;top: 0;left: 0;z-index: 10">
+                                    </a>
+                                        </form>
+                                </div>
+                              </div>
+                              <div class="WB_innerwrap">
+                                <div class="nameBox">
+                                    <a href="#" class="name S_txt1" >{{ session.name }}</a>
+                                    <a  title="微博会员" href="#">
+                                        <i class="fa fa-gitlab" aria-hidden="true"></i>
+                                    </a>
+                                    <a action-type=""  target="_blank" href="#">
+                                        <span node-type="levelBox" levelup="0" class="W_icon_level icon_level_c2">
+                                            <span class="txt_out">
+                                                <span class="txt_in">
+                                                    <span node-type="levelNum" title="微博等级2 升级有好礼">Lv.2</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <ul class="user_atten clearfix W_f18">
+                                  <li class="S_line1">
+                                      <a bpfilter="page_frame" href="#" class="S_txt1">
+                                          <strong node-type="follow">17</strong>
+                                          <span class="S_txt2">关注</span>
+                                      </a>
+                                  </li>
+                                  <li class="S_line1">
+                                      <a bpfilter="page_frame" href="#" class="S_txt1">
+                                          <strong node-type="fans">4</strong>
+                                          <span class="S_txt2">粉丝</span>
+                                      </a>
+                                  </li>
+                                  <li class="S_line1">
+                                      <a bpfilter="page_frame" href="#" class="S_txt1">
+                                          <strong node-type="weibo">2</strong>
+                                          <span class="S_txt2">微博</span>
+                                      </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pl_unlogin_home_topic">
+                        <div class="WB_cardwrap S_bg2">
+                            <div class="DSC_text_e" style="border: 1px solid darkseagreen">
+                                <div class="WB_cardtitle_b S_line2">
+                                    <h4 class="obj_name">
+                                        <span class="main_title W_fb W_f14">热门话题</span>
+                                    </h4>
+                                    <div class="opt_box">
+                                        <a href="javascript:void(0);" data-cur="0" onclick="var a=parseInt(this.getAttribute('data-cur'));var b=(a+1>4)?0:(a+1);document.getElementById('unlogin_hottopic_'+a).style.display='none';document.getElementById('unlogin_hottopic_'+b).style.display='';this.setAttribute('data-cur',b);" class="opt_change S_txt1">
+                                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                                            换一换
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="WB_innerwrap">
+                                    <div class="m_wrap clearfix">
+                                        <div class="list_wrap">
+                                            <ul class="ul_text" id="unlogin_hottopic_0">
+                                                <li class="li_text clearfix">
+                                                  <a href="http://weibo.com/p/10080867c6b3c96eedaee619047a8fb6a8f138?k=%E6%88%91%E7%9A%84%E6%88%98%E4%BA%89&amp;from=trendtop_api" target="_blank" suda-uatrack="key=nologin_home&amp;value=nologin_huati" title="#我的战争#" class="tlink S_txt1">#我的战争#</a><span title="阅读量" class="subtext S_txt2">1.7亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="http://weibo.com/p/1008081b8fdda0f0373512eb2f5510eb3ba609?k=%E9%80%81%E5%88%AB%E4%B9%94%E4%BB%BB%E6%A2%81&amp;from=trendtop_api" target="_blank" suda-uatrack="key=nologin_home&amp;value=nologin_huati" title="#送别乔任梁#" class="tlink S_txt1">#送别乔任梁#</a><span title="阅读量" class="subtext S_txt2">10亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="http://weibo.com/p/10080830b0a2c08c82208fe6a08a621ad1ca1c?k=%E5%81%B6%E6%BB%B4%E6%AD%8C%E7%A5%9E%E5%95%8A&amp;from=trendtop_api" target="_blank" suda-uatrack="key=nologin_home&amp;value=nologin_huati" title="#偶滴歌神啊#" class="tlink S_txt1">#偶滴歌神啊#</a><span title="阅读量" class="subtext S_txt2">60.4亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="http://weibo.com/p/1008087c582ac68a4b9dd9bb081f532430a362?k=%E7%94%B5%E8%A7%86%E5%89%A7%E5%B9%BB%E5%9F%8E&amp;from=trendtop_api" target="_blank" suda-uatrack="key=nologin_home&amp;value=nologin_huati" title="#电视剧幻城#" class="tlink S_txt1">#电视剧幻城#</a><span title="阅读量" class="subtext S_txt2">38.8亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="#" target="_blank"  title="#李静帮你请假#" class="tlink S_txt1">#李静帮你请假#</a>
+                                                    <span title="阅读量" class="subtext S_txt2">2.5万</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="#" target="_blank" title="#亚洲新歌榜#" class="tlink S_txt1">#亚洲新歌榜#</a>
+                                                    <span title="阅读量" class="subtext S_txt2">176.7亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="#" target="_blank" title="#今日贴纸打卡#" class="tlink S_txt1">#今日贴纸打卡#</a>
+                                                    <span title="阅读量" class="subtext S_txt2">33.3亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="#" target="_blank"  title="#李易峰麻雀陈深#" class="tlink S_txt1">#李易峰麻雀陈深#</a><span title="阅读量" class="subtext S_txt2">2亿</span>
+                                                </li>
+                                                <li class="li_text clearfix">
+                                                  <a href="#" title="#嫉妒的化身#" class="tlink S_txt1">#嫉妒的化身#</a><span title="阅读量" class="subtext S_txt2">4.8亿</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="WB_cardwrap S_bg2">
+                        <!--广告位-->
+                        <div class="unlogin_advert_1">
+                           <a href="#"><img src="http://ww4.sinaimg.cn/large/005M94J9jw1f33a105uixj306e02sjs7.jpg "></a>
+                        </div>
+                        <!--//广告位-->
+                    </div>
+                    <div id="pl_unlogin_home_sinahead">
+                        <div class="WB_cardwrap S_bg2">
+	                        <div class="PCD_text_g">
+                                <div class="WB_cardtitle_b S_line2">
+                                    <div class="obj_name">
+                                        <h2 class="main_title W_fb W_f14">
+                                            <a href="#" class="S_txt1" >新浪头条</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="WB_innerwrap">
+                                    <div class="m_wrap">
+                                        <ul class="clearfix">
+                                            <li class="W_fl">
+                                                <a href="#"  class="S_txt1">
+                                                    <i class="fa fa-fire" aria-hidden="true"></i>
+                                                热榜要闻
+                                                </a>
+                                            </li>
+                                            <li class="W_fl">
+                                                <a href="#"  class="S_txt1" >
+                                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                                    我爱看图
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="W_autocut clearfix">
+                                            <span class="W_fl S_spetxt">
+                                                <a href="#" target="_blank" >要闻
+                                                </a>
+                                            </span>
+                                            <a href="#" target="_blank" class="S_txt1" >
+                                                皮特离婚丑闻连爆疑朱莉设局
+                                            </a>
+                                        </p>
+                                        <p class="W_autocut clearfix">
+                                            <span class="W_fl S_spetxt">
+                                                <a href="#" >热图</a>
+                                            </span>
+                                            <a href="#"class="S_txt1">乔父致辞:我们不怪你永远爱你</a>
+                                        </p>
+                                        <p class="W_autocut clearfix">
+                                            <span class="W_fl S_spetxt">
+                                                <a href="#" >视频</a>
+                                            </span>
+                                            <a href="#" class="S_txt1" >刘德华因粉丝被推搡当场发飙</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pl_unlogin_home_adcontent">
+                        <div class="WB_cardwrap S_bg2">
+                        <!--广告位-->
+                            <div class="unlogin_advert_2">
+                                <a target="_blank" href="#">
+                                    <img src="http://u1.img.mobile.sina.cn/public/files/image/230x175_img57e2502bf060e.png">
+                                </a>
+                            </div>
+                        <!--//广告位-->
+                        </div>
+                    </div>
+                    <div id="pl_unlogin_home_hotpersoncategory">
+                        <div class="WB_cardwrap S_bg2">
+                            <div class="DSC_text_b DSC_text_b1">
+                                <div class="WB_cardtitle_b S_line2">
+                                  <div class="obj_name">
+                                    <h2 class="main_title W_fb W_f14">微博找人</h2>
+                                  </div>
+                                </div>
+                            <div class="WB_innerwrap">
+                              <div class="m_wrap clearfix">
+
+                                <div class="list_wrap">
+                                  <h3 class="text_title">名人</h3>
+                                  <ul class="ul_text clearfix">
+                                    <li class="li_text">
+                                        <a  href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_892_1003_0.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">明星</span>
+                                        </a>
+                                    </li>
+                                    <li class="li_text">
+                                        <a href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_892_1001_0.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">商界</span>
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <div class="list_wrap">
+                                  <h3 class="text_title">专家</h3>
+                                  <ul class="ul_text clearfix">
+                                    <li class="li_text">
+                                        <a href="http://d.weibo.com/1087030002_2975_2017_0" class="tlink S_txt1">
+                                            <i class="item_icon"><img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_558_3_2017.png" class="pic"></i>
+                                            <span class="text width_fix W_autocut">医疗</span>
+                                        </a>
+                                    </li>
+                                    <li class="li_text">
+                                        <a href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_558_3_2018.png" class="pic"></i>
+                                            <span class="text width_fix W_autocut">育儿</span>
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <div class="list_wrap">
+                                  <h3 class="text_title">兴趣</h3>
+                                  <ul class="ul_text clearfix">
+                                    <li class="li_text">
+                                        <a href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_854_2025_0.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">时尚</span>
+                                        </a>
+                                    </li>
+                                    <li class="li_text">
+                                        <a href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_854_2006_0.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">美女</span>
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <div class="list_wrap">
+                                  <h3 class="text_title">机构</h3>
+                                  <ul class="ul_text clearfix">
+                                    <li class="li_text">
+                                        <a  href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_558_3_5004.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">政务</span>
+                                        </a>
+                                    </li>
+                                    <li class="li_text">
+                                        <a href="#" class="tlink S_txt1">
+                                            <i class="item_icon">
+                                                <img src="http://img.t.sinajs.cn/t6/style/images/connect/finder/1087030002_558_3_5007.png" class="pic">
+                                            </i>
+                                            <span class="text width_fix W_autocut">媒体</span>
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- /m_wrap -->
+                            </div>
+                            <!-- /WB_innerwrap -->
+                            </div>
+                            <!-- /DSC_text_b -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--返回顶部-->
+    <a class="W_gotop S_ficon_bg hide_style"  href="javascript:void(0);" >
+        <i style="" class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <!--返回顶部结束-->
+
+    <!--图片发布框-->
+    <div id="uploadimg" class="W_layer W_layer_pop hide_style" style="left: 338px; top: 221px;">
+        <div class="content">
+            <div class="W_layer_title">
+                <div class="W_layer_close">
+                    <input type="file" id="files" multiple>
+                    <h4 class="cover_input">本地上传</h4>
+                    <a href="javascript:void(0);" id="publish_close" class="W_ficon ficon_close S_ficon">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="layer_send_pic">
+                <div class="upload_img" id="list"></div>
+                <a href="javascript:;" class="ico_delpic"></a>
+            </div>
+            <div class="W_layer_arrow">
+                <span class="W_arrow_bor W_arrow_bor_t" style="left: 81px;">
+                    <i class="S_line3"></i><em class="S_bg2_br"></em>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--/图片发布框结束-->
+
+    <!--内容发布模板-->
+    <template id="new_content">
+        <div class="WB_feed WB_feed_v3 WB_feed_v4">
+            <div class="WB_cardwrap WB_feed_type S_bg2">
+                <div class="WB_feed_detail clearfix">
+                    <div class="WB_face W_fl">
+                        <div class="face">
+                            <a target="_blank" class="W_face_radius" href="/" title="user">
+                                <img title="一块去旅行" alt="" width="50" height="50"
+                                     src="http://tva2.sinaimg.cn/crop.3.0.369.369.180/006A5joSjw1f877fit2a7j30af0a9glz.jpg"
+                                     class="W_face_radius">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="WB_detail">
+                        <div class="WB_info">
+                            <a target="_blank" class="W_f14 W_fb S_txt1" href="/">
+                                UserName
+                            </a>
+                        </div>
+                        <div class="WB_from S_txt2">
+                            <a target="_blank" href="/" class="S_txt2">
+                                今天10:01
+                            </a>
+                            来自
+                            <a class="S_txt2" target="_blank" href="http://app.weibo.com/t/feed/6vtZb0">
+                                微博 weibo.com
+                            </a>
+                        </div>
+                        <div class="WB_text W_f14" id="enter_text">
+                            江苏所有的古镇都在这里了，很多都免费！赶紧收藏!
+                        </div>
+                        <div class="WB_media_wrap clearfix">
+                            <div class="media_box">
+                                <ul id="new_picture" style="margin: 0; padding: 0"
+                                    class="WB_media_a WB_media_a_mn WB_media_a_m9 clearfix">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="WB_feed_handle">
+                        <div class="WB_handle">
+                            <ul class="WB_row_line WB_row_r4 clearfix S_line2" style="margin: 0; padding: 0">
+                                <li>
+                                    <a class="S_txt2" href="javascript:void(0);">
+                                    <span class="pos">
+                                        <span class="line S_line1" style="border-left-width: 0;">
+                                            <span>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <span>收藏</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="S_txt2" href="javascript:void(0);">
+                                    <span class="pos">
+                                        <span class="line S_line1"><span>
+                                            <i class="fa fa-share" aria-hidden="true"></i>
+                                            <span>263</span>
+                                        </span>
+                                        </span>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="curr">
+                                    <a class="S_txt2" href="javascript:void(0);">
+                                    <span class="pos">
+                                        <span class="line S_line1">
+                                            <span>
+                                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                                <span>0</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    </a>
+                                <span class="arrow">
+                                    <span class="W_arrow_bor W_arrow_bor_t">
+                                        <i class="S_line1"></i><em class="S_bg1_br"></em>
+                                    </span>
+                                </span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="DoFavor();" class="S_txt2" title="赞">
+                                    <span class="pos">
+                                        <span class="line S_line1">
+                                            <span node-type="like_status" class="">
+                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                <span id="favor_count">0</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--评论框-->
+                    <div class="WB_feed_repeat S_bg1"  id="comment_box_1"  style="display: none">
+                        <div class="WB_repeat S_line1">
+                            <!-- 评论框 -->
+                            <div class="WB_feed_publish clearfix">
+                                <div class="WB_face W_fl">
+                                        <img src="http://tva2.sinaimg.cn/crop.3.0.369.369.50/006A5joSjw1f877fit2a7j30af0a9glz.jpg">
+                                    </div>
+                                <div>
+                                    <div class="WB_publish" id="comment_box" >
+                                        <div class="p_input">
+                                        <textarea id="saytext_sub" class="W_input"
+                                                  style="margin: 0px; padding: 5px 2px 0px 6px; border-style: solid; border-width: 1px; font-size: 12px; word-wrap: break-word; line-height: 18px; overflow: hidden; outline: none; height: 23px;"></textarea>
+                                    </div>
+                                        <div class="p_opt clearfix">
+                                            <div class="btn W_fr">
+                                            <a class="W_btn_a W_btn_a_disable" href="javascript:void(0);"
+                                               onclick="SubPublishContent();" >评论
+                                            </a>
+                                        </div>
+                                            <div class="opt clearfix">
+                                        <span class="ico">
+                                            <a href="javascript:void(0);" class="qq_face_sub" title="表情" alt="表情">
+                                                <i class="fa fa-smile-o"
+                                                   style="color: #ff9000;cursor: pointer;font-size: 20px;margin-right: 5px;vertical-align: middle;"
+                                                   aria-hidden="true"></i>
+                                            </a>
+                                            <input style="width: 25px;height: 20px;position: absolute;margin-left: 23px;margin-top: -20px;z-index: 2;opacity: 0" type="file" class="comment_files" multiple>
+                                            <a href="javascript:void(0);" id="publish_img" style="position: relative;">
+                                                <i class="fa fa-picture-o"
+                                                   style="cursor: pointer;color: #84c002;font-size: 20px;margin-right: 5px;vertical-align: middle;"
+                                                   aria-hidden="true"></i>
+                                                <div style="position: absolute; left: 0px; top: 0px; display: block; overflow: hidden; opacity: 0; width: 20px; height: 20px; background-color: rgb(0, 0, 0);">
+
+                                                </div>
+                                            </a>
+                                        </span>
+                                            <ul class="ipt">
+                                                <li>
+                                                    <label class="W_label">
+                                                        <input class="W_checkbox" type="checkbox" name="forward">
+                                                        <span>同时转发到我的微博</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="W_label">
+                                                        <input class="W_checkbox" type="checkbox" name="isroot">
+                                                        <span>同时评论给原文作者 全球旅游攻略</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--评论发布-->
+                            <div class="repeat_list">
+                                <!-- 已有评论列表 -->
+                                <div class="list_box">
+                                    <div class="list_ul comment_list_sub" id="comment_list">
+                                        <div  class="list_li S_line1 clearfix comment_content" id="comment_replay">
+                                            <div class="WB_face W_fl">
+                                                <a href="http://weibo.com/2866319062" id="comment_user_pic">
+                                                    <!--user_head_pic-->
+                                                </a>
+                                            </div>
+                                            <div class="list_con">
+                                                <div class="WB_text">
+                                                    <a href="#" id="comment_user_name">
+                                                        <!--username-->
+                                                    </a>
+                                                    <a href="#" id="comment_text">
+                                                        <!--comment_info-->
+                                                    </a>
+                                                </div>
+                                                <div class="WB_expand_media_box" style="display: none;"></div>
+                                                <div class="WB_func clearfix">
+                                                    <div class="WB_handle W_fr">
+                                                         <ul class="clearfix">
+                                                            <li class="hover">
+                                                                <span class="line S_line1">
+                                                                    <a class="S_txt1" id="report" href="javascript:void(0);" onclick="javascript:window.open('http://service.account.weibo.com/reportspam?rid=4024270034298507&amp;type=2&amp;url=&amp;bottomnav=1&amp;wvr=6', 'newwindow', 'height=700, width=550, toolbar =yes, menubar=no, scrollbars=yes, resizable=yes, location=no, status=no');">
+                                                                    <!--举报-->
+                                                                    </a>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="line S_line1">
+                                                                    <a class="S_txt1 " onclick="ReplayComment(this)" id="replay" ></a>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="line S_line1">
+                                                                    <a href="javascript:void(0)" class="S_txt1" title="赞" id="favout">
+                                                                    </a>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="WB_from S_txt2" id="datetime"></div>
+                                                </div>
+                                                <div id="replay_box"  class="WB_repeat_in S_bg2 biao" style="display: none">
+                                                    <div class="WB_feed_publish clearfix">
+                                                        <div class="WB_publish">
+                                                            <div class="p_input">
+                                                                <textarea  id="replay_input" class="W_input" range="11&amp;0" style="margin: 0px; padding: 5px 2px 0px 6px; border-style: solid; border-width: 1px; font-size: 12px; word-wrap: break-word; line-height: 18px; overflow: hidden; outline: none; height: 23px;"></textarea>
+                                                            </div>
+                                                            <div class="p_opt clearfix">
+                                                                <div class="btn W_fr">
+                                                                    <a onclick="SubComment(this)"; class="W_btn_a W_btn_a_disable">评论</a>
+                                                                </div>
+                                                                <div class="opt clearfix">
+                                                                    <span class="ico">
+                                                                        <a class="smiley_replay" href="javascript:void(0);">
+                                                                            <i class="fa fa-smile-o" style="color: #ff9000;cursor: pointer;font-size: 20px;margin-right: 5px;vertical-align: middle;" aria-hidden="true"></i>
+                                                                        </a>
+                                                                    </span>
+                                                                    <span class="ico">
+                                                                        <a href="javascript:void(0);" style="position: relative;">
+                                                                            <i class="fa fa-picture-o" style="cursor: pointer;color: #84c002;font-size: 20px;margin-right: 5px;vertical-align: middle;" aria-hidden="true"></i>
+                                                                            <div style="position: absolute; left: 0px; top: 0px; display: block; overflow: hidden; opacity: 0; width: 20px; height: 20px; background-color: rgb(0, 0, 0);">
+                                                                            </div>
+                                                                        </a>
+                                                                    </span>
+                                                                    <ul class="ipt">
+                                                                        <li>
+                                                                            <label class="W_label" for="LAB_1475027964412432">
+                                                                                <input node-type="forward" name="" type="checkbox" value="" class="W_checkbox" id="LAB_1475027964412432">
+                                                                                <span>同时转发到我的微博</span>
+                                                                            </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!--/内容发布模板-->
+</div>
+<div id="img_list">
+
+</div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery-1.8.2.min.js"></script>
+<script src="/static/js/jquery.qqFace.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#qq_face').qqFace({
+            id : 'facebox',
+            assign:'saytext',
+            path:'/static/images/qq_face/'
+        });
+        $(".sub_btn").click(function(){
+            var str = $("#saytext").val();
+            $("#show").html(replace_em(str));
+        });
+    });
+    //查看结果
+    function replace_em(str){
+        str = str.replace(/\</g,'&lt;');
+        str = str.replace(/\>/g,'&gt;');
+        str = str.replace(/\n/g,'<br/>');
+        str = str.replace(/\[em_([0-9]*)\]/g,'<img src="qq_face/$1.gif" border="0" />');
+        return str;
+    }
+
+    function load_wb() {
+        $.ajax({
+            url:'/load_wb/',
+            dataType:'json',
+            success:function (arg) {
+                console.log(arg);
+                if(arg[0]){
+                    console.log(666);
+{#                    $(arg).each(#}
+{#                        PublishContent(this)#}
+{#                )#}
+                    for(var i=0;i<arg.length;i++){
+                    PublishContent(arg[i])
+            }
+                }
+            }
+        });
+    }
+    $('.gn_search input').change(function () {
+        $(this).prev().text('')
+    })
+    $('.gn_search input').focus(function () {
+        $(this).prev().css('display','none')
+    })
+    $('.gn_search input').blur(function () {
+        if($(this).val()){
+            $(this).prev().css('display','')
+        }
+    });
+    $('.ficon_search').click(function () {
+        var val=$('.gn_search input').val();
+        window.location.href='/sou/wb/?word='+val;
+    })
+    $(function () {
+        BindSearch();
+        BindOpenPublish();
+        BindClosePublish();
+        BindDisplayInfo();
+        load_wb();
+        $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
+        });
+
+    /*
+    返回顶部
+    */
+    window.onscroll=function(){
+        var current=$(window).scrollTop();
+        $(".W_gotop").mousemove(function () {
+            $(this).addClass("top_hover");
+        });
+        $(".W_gotop").mouseout(function () {
+            $(this).removeClass("top_hover")
+        });
+        if (current>60){
+          $(".W_gotop").removeClass("hide_style")
+        }else {
+        $(".W_gotop").addClass("hide_style")
+        }
+      };
+
+   $(".W_gotop").click(function top(){
+       $(window).scrollTop(0)
+   });
+
+    /*
+    搜索框
+    */
+
+    function BindSearch() {
+        BindDisplayInfo();
+    }
+    function BindDisplayInfo() {
+        var search_button=document.getElementById('search_input');
+	    var display_style=document.getElementById('select_option');
+        search_button.onclick=function (ev){
+            var oEvent=ev||event;
+            display_style.style.display='block';
+            //alert('按钮被点击了');
+            oEvent.cancelBubble=true;
+            oEvent.cancelBubble=true;
+        };
+        document.onclick=function (){
+            display_style.style.display='none';
+            //alert('document被点击了');
+	    };
+    }
+
+
+    /*
+    打开上传图片框
+     */
+    function BindOpenPublish() {
+        $('#publish').click(function(){
+                 $("#uploadimg").removeClass("hide_style");
+            });
+    }
+
+    /*
+    关闭上传图片框
+     */
+    function BindClosePublish() {
+        $("#publish_close").click(function () {
+            $("#uploadimg").addClass("hide_style");
+        });
+    }
+
+    /*
+    发布框监听字数
+    */
+    function countNum(e){
+            var value=$(e).val();
+            var cArr = value.match(/([\u0391-\uffe5])/ig); // 返回中文的字符
+            var num=Math.floor((420-value.length-2*(cArr == null ? 0 : cArr.length))/3);
+            $("#num").text(num);
+            if(num>=0){
+                $("#countNum").css({"color": "blue"});
+            }else{
+                $("#countNum").css({"color": "red"});
+            }
+        }
+
+    /*
+    图片本地上传
+     */
+    function handleFileSelect(evt) {
+        var files = evt.target.files;
+            console.log(files);
+        var form = new FormData();
+        form.append("files", files);
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+         form.append('files', f, f.name);
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML =
+          [
+            '<img style="height:75px;width:75px;border: 1px solid #000; margin: 5px" src="',
+            e.target.result,
+            '" title="', escape(theFile.name),
+            '"/>'
+          ].join('');
+
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+        $.ajax({
+        'url':'/upload_img/',
+        'type':'POST',
+        'data':form,
+        'dataType': "json",
+        processData: false,  // tell jQuery not to process the data
+        contentType: false,  // tell jQuery not to set contentType
+        success: function(arg){
+            $(arg).each(function () {
+                var input='<input type="hidden" value='+this+'>';
+                $('#img_list').append(input);
+            })
+        }
+    });
+  }
+
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+	// 创建本地地址
+	function getFileUrl(sourceId) {
+		var url;
+		if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+		url = sourceId.value;
+		} else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+		url = window.URL.createObjectURL(sourceId.files.item(0));
+		} else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+		url = window.URL.createObjectURL(sourceId.files.item(0));
+        console.log(url)
+		}
+		return url;
+	};
+
+    $('.W_btn_a').click(function () {
+        var text=$('.send_weibo textarea').val();
+        img_list=[];
+        if($('#img_list input')!=[]){
+            var imgs=$('#img_list input');
+            for(var i=0;i<imgs.length;i++){
+                var input=imgs[i];
+                var img=$(input).val();
+                img_list.push(img);
+            }
+        }
+        data={'text':text,'img_list':img_list};
+        data=JSON.stringify(data);
+        $.post('/create_wb/',{'data':data},function (arg) {
+            arg=JSON.parse(arg);
+            arg.user_name=$('.name').text();
+            arg.user_head=$('.headpic img').attr('src');
+            arg.comment='0';
+            arg.like='0';
+            console.log('arg',arg);
+            PublishContent(arg);
+                }
+    )
+    });
+
+    /*  本地发布 */
+    function PublishContent(arg) {
+        console.log(arg);
+        $("#uploadimg").addClass("hide_style");
+        str= String(arg['text']);
+        var temp = '<span>'+replace_em(str)+'</span>';
+        console.log('temp',temp);
+        var enter_text = $(temp).get(0);
+        var qq_img = $(enter_text).children('img');
+        console.log(enter_text);
+        $(qq_img).each(function () {
+            var qq_img_src =  "/static/images/" + $(this).attr('src');
+            $(this).attr('src', qq_img_src);
+        })
+        var img_list = arg.img_list;
+        var zane = $('#new_content').html();
+
+        var element = $(zane).get(0);
+        $(element).find('#enter_text').html(enter_text);
+        $(img_list).each(function () {
+            var img = document.createElement('img');
+            var li = document.createElement('li');
+            $(img).attr('src', this).css('width','250px');
+            $(li).addClass('WB_pic li_1 S_bg1 S_line2 bigcursor"');
+            $(li).append(img);
+            $(element).find('#new_picture').append(li);
+        });
+        var username=$('.name').text();
+        var user_head=$('.headpic img').attr('src');
+        $(element).find('.face img').attr('src',arg.user_head);
+        $(element).find('.face a').attr('href','/my/?user='+arg.user_id);
+        $(element).find('.WB_info a').text(arg.user_name);
+        $(element).find('.WB_from  a:eq(0)').text(arg['date']);
+        $(element).find('.WB_from  a:eq(0)').text(arg['date']);
+        $(element).find('.fa-comment-o').next().text(arg['comment']);
+        $(element).find('.fa-thumbs-o-up').next().text(arg['like']);
+        $(element).insertAfter('#publish_news');
+{#        $('#publish_news').append(element);#}
+        $('.layer_pic_list').css('display', 'none');
+        $('#upload_img').text('');
+        $('#saytext').val('');
+        $('#files').val('');
+    }
+    $('#head_file').change(function () {
+
+            form = new FormData();
+            var fileObj = $('#head_file')[0].files;
+            $.each(fileObj,function (k,v) {
+                form.append('head_file',v);
+            });
+            console.log(fileObj,form);
+
+        $.ajax({
+        'url':'/upload_head/',
+        'type':'POST',
+        'data':form,
+        processData: false,  // tell jQuery not to process the data
+        contentType: false,  // tell jQuery not to set contentType
+        success: function(arg){
+            $('#head_img').attr('src',arg)
+        }
+    });
+    });
+
+    /*
+     点赞
+     */
+    function DoFavor() {
+        var $favorCount = $("#favor_count");
+        var c = parseInt($favorCount.text());
+        $favorCount.text(c + 1);
+    }
+
+    /*
+     评论
+     */
+    function SubPublishContent() {
+        $("#comment_box_1").css('display', 'block');
+        var temp = '<span>' + replace_em($('#saytext_sub').val()) + '</span>';
+        var enter_text = $(temp).get(0);
+        var qq_img = $(enter_text).children("img");
+        $(qq_img).each(function () {
+            var qq_img_src = "static/images/" + $(this).attr('src');
+            $(this).attr('src', qq_img_src);
+        });
+        var zane = $('#comment_list').html();
+        var element = $(zane).get(0);
+        $(element).find("#comment_user_pic").html("FACE");
+        $(element).find("#comment_user_name").html("UserName：");
+        $(element).find('#comment_text').html(enter_text);
+        $(element).find("#report").html("举报");
+        $(element).find("#replay").html("回复");
+        $(element).find("#favout").html("赞");
+        $(element).find("#datetime").html("10秒前");
+        $(element).insertAfter('#comment_list');
+        $('#saytext_sub').val('');
+        $("#comment_user_pic").val('');
+        $("#comment_user_name").text('');
+        $('.smiley_replay').qqFace({
+            id: 'facebox',
+            assign: 'replay_input',
+            path: 'static/images/qq_face/'
+        });
+    }
+
+    /*
+    回复
+     */
+    function ReplayComment(ths){
+        $(ths).parentsUntil('.list_con').parent().find('#replay_box').css('display', 'block').addClass('active');
+    }
+
+    function SubComment(ths) {
+        var str = '@username：'+ $(ths).parentsUntil('.list_con').parent().find('#replay_input').val();
+        var temp = '<span>' + replace_em(str) + '</span>';
+        var enter_text = $(temp).get(0);
+        console.log(enter_text);
+        var qq_img = $(enter_text).children("img");
+        $(qq_img).each(function () {
+            var qq_img_src = "static/images/" + $(this).attr('src');
+            $(this).attr('src', qq_img_src);
+        });
+        var zane = $('#comment_list').html();
+        var element = $(zane).get(0);
+        $(element).find("#comment_user_pic").html("FACE");
+        $(element).find("#comment_user_name").html("UserName：");
+        $(element).find('#comment_text').html(enter_text);
+        $(element).find("#report").html("举报");
+        $(element).find("#replay").html("回复");
+        $(element).find("#favout").html("赞");
+        $(element).find("#datetime").html("10秒前");
+        $(element).insertAfter('#comment_list');
+        $(ths).parentsUntil('.list_con').parent().find('#replay_input').val('');
+        $("#comment_user_pic").val('');
+        $("#comment_user_name").text('');
+    }
+</script>
+</body>
+</html>

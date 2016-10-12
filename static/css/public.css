@@ -1,0 +1,236 @@
+/*导航部分公用样式*/
+.nav_header a, .nav_header .S_link1,
+.nav_header a.S_txt1:hover, .nav_header a:hover .S_txt1,
+.nav_header a.current .S_txt1, .nav_header a.S_txt2:hover,
+.nav_header .SW_fun:hover .S_func1 {
+    color: #eb7350;
+}
+.nav_header .S_ficon, .nav_header .S_ficon_dis,
+.nav_header a.S_ficon_dis:hover, .nav_header a:hover .S_ficon_dis {
+    color: #696e78;
+}
+
+.nav_header .gn_nav_list li a .W_ficon {
+    vertical-align: top;
+}
+/*登录成功后导航样式*/
+.nav_header .S_line1 { border-color: #d9d9d9;}
+.nav_header .gn_set {margin-right: 10px;}
+.nav_header .gn_set {
+    float: left;
+    margin: 12px 0 12px 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+/*导航部分公用样式结束*/
+
+.W_unlogin_v2 .cp_logo, .W_unlogin_v2 .W_login_form .username .input_wrap,
+.W_unlogin_v2 .W_login_form .password .input_wrap,
+.W_unlogin_v2 .W_login_form .phone .input_wrap,
+.W_unlogin_v2 .info_header .qrcode_phone,
+.W_unlogin_v2 .info_header .qrcode_target,
+.W_unlogin_v2 .info_header .qrcode_target_hide {
+    background-image: url("/WeiBo/static/images/sprite_login.png");
+    background-repeat: no-repeat;
+}
+
+.W_fl {
+    float: left;
+}
+
+.W_fr {
+    float: right;
+}
+
+.S_txt2, .W_input, .W_btn_b_disable, .W_btn_b_disable:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+.W_input, .send_weibo .input {
+    background-color: #fff;
+}
+
+.W_unlogin_v2 .info_list {
+    margin-top: 12px;
+}
+
+.W_unlogin_v2 .icon_tianyi {
+    background-position: -100px -50px;
+}
+.W_unlogin_v2 .icon_360 {
+    background-position: -150px -50px;
+}
+
+.W_unlogin_v2 .icon_unicom {
+    background-position: -200px -50px;
+}
+
+.W_unlogin_v2 .icon_baidu {
+    background-position: -250px -50px;
+}
+
+.S_line2 {
+    border-color: #f2f2f5;
+}
+
+.S_link1, a.S_txt1:hover, a.current .S_txt1, a.S_txt2:hover, .SW_fun:hover .S_func1 {
+    color: #eb7350;
+    text-decoration: none;
+}
+.WB_cardtitle_b {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.WB_cardtitle_a, .WB_cardtitle_b, .WB_cardtitle_d {
+    position: relative;
+    height: 38px;
+    padding: 0 16px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+.WB_cardtitle_a .main_title, .WB_cardtitle_b .main_title, .WB_cardtitle_c .main_title, .WB_cardtitle_d .main_title {
+    display: inline;
+}
+
+/*发布*/
+.S_bg2, blockquote, .W_btn_b, .W_input, .SW_fun_bg {
+    background-color: #fff;
+}
+.send_weibo {
+     background-image: none;
+    margin: 0 0 10px 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    border-radius: 2px;
+    padding: 15px 10px 10px;
+    height: 160px;
+    overflow: hidden;
+}
+.send_weibo .title_area {
+    position: relative;
+    overflow: hidden;
+    height: 21px;
+}
+.send_weibo .title {
+    outline-style: none;
+    font: normal 16px Tahoma;
+    line-height: 16px;
+    float: left;
+    width: 200px;
+    height: 21px;
+}
+.send_weibo .title .txt {
+    display: none;
+}
+.send_weibo .title .W_swficon {
+    height: 21px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.send_weibo .ficon_swtxt {
+    color: #1b7fb6;
+}
+.W_swficon {
+    font-size: 18px!important;
+}
+.W_swficon {
+    font-family: "WBswficon" !important;
+    font-size: 18px!important;
+    display: inline-block;
+}
+
+.send_weibo .num {
+    position: absolute;
+    right: 0;
+}
+.send_weibo .num span{
+    color: #eb7350;
+}
+.send_weibo .key {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    max-width: 380px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.send_weibo .key a{
+    color: #eb7350;
+    text-decoration: none;
+}
+.send_weibo .title .W_swficon .spac1 {
+    display: inline-block;
+    vertical-align: top;
+    height: 21px;
+    letter-spacing: -3px;
+}
+.send_weibo .title .W_swficon .spac2 {
+    display: inline-block;
+    vertical-align: top;
+    height: 21px;
+    padding-left: 4px;
+}
+.send_weibo .title .W_swficon .spac3 {
+    display: inline-block;
+    vertical-align: top;
+    height: 21px;
+    letter-spacing: -3.8px;
+}
+.send_weibo .title .W_swficon .spac4 {
+    display: inline-block;
+    vertical-align: top;
+    height: 18px;
+    padding: 3px 0 0 4px;
+}
+.input .input_text{
+    margin: 0px; padding: 0px; border-style: none; border-width: 0px;
+    font-size: 14px; word-wrap: break-word; line-height: 18px;
+    overflow-y: auto; overflow-x: hidden; outline: none;
+}
+.W_input, .send_weibo .input {
+    background-color: #fff;
+}
+
+.S_line3, .W_input, .send_weibo .input, .W_btn_b:hover {
+    border-color: #cccccc;
+}
+/*发布结束*/
+
+.W_person_info .nameBox .name, .W_person_info .nameBox .W_icon, .W_person_info .nameBox .W_icon_vipstyle, .W_person_info .nameBox .W_icon_co1 {
+    vertical-align: middle;
+}
+
+.icon_member_dis {
+    background-position: 0 -200px;
+}
+
+.icon_member, .icon_member_dis, .icon_wedding {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    margin-left: 3px;
+}
+.user_atten {
+    height: 34px;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+.W_f18 {
+    font-size: 18px;
+}
+.S_bg2, blockquote, .W_btn_b, .W_input, .SW_fun_bg {
+    background-color: #fff;
+}
+.W_f14 {
+    font-size: 14px;
+    color: #333333;
+}
+.W_fb {
+    font-weight: 700;
+}

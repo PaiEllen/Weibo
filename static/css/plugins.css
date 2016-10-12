@@ -1,0 +1,171 @@
+/*
+首页插件样式
+1.图片发布样式
+2.返回顶部样式
+*/
+/*图片发布样式*/
+.W_layer, .W_layer legend, .W_layer .W_input:focus, .W_layer .S_txt1, .W_layer .W_btn_b, .W_layer .SW_fun .S_func1 {
+    color: #333;
+    text-decoration: none;
+}
+.W_layer {
+    position: absolute;
+    z-index: 99;
+}
+.W_layer_pop .content {
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,0.2);
+}
+.W_layer .W_layer_title {
+    border-bottom: 1px solid #f2f2f5;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 0 0 16px;
+    vertical-align: middle;
+}
+
+.W_layer_pop .W_layer_title .W_layer_close .ficon_close {
+    right: 6px;
+    top: -4px;
+}
+.W_layer_pop .W_layer_close .ficon_close {
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+}
+.W_layer .S_ficon, .W_layer .S_ficon_dis, .W_layer .S_ficon_dis:hover, .W_layer a:hover .S_ficon_dis {
+    color: #696e78;
+}
+.W_ficon {
+    font-family: "wbficonregular" !important;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+.layer_send_pic, .layer_send_medias, .layer_send_welfare, .layer_send_longwb, .layer_send_topic, .layer_send_vote {
+    width: 400px;
+    padding: 26px 16px 16px;
+}
+.layer_send_btn {
+    overflow: hidden;
+}
+.layer_send_btn ul {
+    overflow: hidden;
+}
+.W_layer .S_line2 {
+    border-color: #f2f2f5;
+}
+.W_layer .S_line2 .upload_file{
+    position: absolute;
+    width: 183px;
+    height: 45px;
+    left: 5px;
+    cursor: pointer;
+    opacity: 0;
+}
+.layer_send_btn li {
+    float: left;
+    width: 195px;
+    height: 45px;
+    padding: 5px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.W_layer a, .W_layer .S_link1, .W_layer a.S_txt1:hover,
+.W_layer a.current .S_txt1, .W_layer a.S_txt2:hover, .W_layer .SW_fun:hover .S_func1 {
+    color: #eb7350;
+}
+.W_btn_l, .W_btn_l:hover {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.W_btn_l span {
+    width: 100%;
+    text-align: center;
+}
+.btn_45px {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.W_btn_l .W_ficon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.W_layer_pop .W_layer_arrow .W_arrow_bor_t {
+    top: -14px;
+}
+.W_layer_pop .W_layer_arrow .W_arrow_bor {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+}
+.W_layer .W_arrow_bor_t .S_line3 {
+    border-color: transparent transparent #ccc transparent;
+}
+.W_layer .W_arrow_bor_t .S_bg2_br {
+    border-color: transparent transparent #fff transparent;
+}
+.W_arrow_bor_t em {
+    margin: 1px 0 0 -14px;
+}
+.W_arrow_bor i, .W_arrow_bor em {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: solid;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+.S_bg2_br {
+    color: #fff;
+}
+
+
+/*图片发布样式结束*/
+
+/*返回顶部样式*/
+.W_gotop {
+    left: 50%;
+    z-index: 101;
+    margin-left: 500px;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    visibility: visible;
+    transform: translateZ(0px);
+    position: fixed;
+    bottom: 40px;
+    top: auto;
+}
+.W_gotop i{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.top_hover{
+    opacity: 0.9;
+}
+
+/*返回顶部样式结束*/

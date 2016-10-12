@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* skin */
+/*主链接*/
+a, .W_linka a, a.W_linka, .W_linka { color:#6097d6; }
+/*次链接*/
+.W_linkb a, a.W_linkb ,.W_linkb{ color:#6097d6; }
+/*主文字颜色*/
+body, .W_texta, a.W_texta ,.S_txt1{ color:#333; }
+/*次文字颜色*/
+.W_textb, a.W_textb,.S_txt2 { color:#808080; }
+a.W_texta:hover,a.W_textb:hover,.S_txt1:hover,.S_link1{ color:#6097d6;}
+/*三级主文字颜色 feed转发评论区*/
+.W_textc { color:#777; }
+
+/*标红*/
+.red{ color:#ef4d58;}
+/*字号*/
+W_f12{ font-size:12px;}
+W_f14{ font-size:14px;}
+
+
+/*错误文字颜色*/
+.W_error { color:#da0000; }
+/* 特殊字色 */
+.W_spetxt { color:#f00; }
+.W_spetxtb { color:#388222; }
+.W_spetxtc, .search_topcon .W_spetxtc { color:#add7ed; }/* 蓝色，现用于头部小竖线 */
+.W_spetxtd { color:#ff6608; }/* 蓝色，现用于头部小竖线 */
+.W_spetxte { color:#c00; }
+
+.W_spenum { color:#f60; }
+
+.S_ficon{ color: #696e78; }
+
+/*发布框无背景*/
+.send_weibo .no_title { background:none; }
+.W_vline { border-color:#d9d9d9; color:#d9d9d9;}
+/*计数标签*/
+.W_count, .W_count span { color:#fff; background-image:url(../public/images/bg_count.gif?id=1358945747143); }
+/*背景颜色和背景平铺图*/
+body { background-color:#c5d6ea;  background-image:url(../../images_v6/common/body_repeat_v6.png?id=201409191112); background-repeat:repeat-x; background-position:center 0; }
+.S_wrap{ background-image:url(../../images_v6/common/body_bg_v6.jpg?id=201409191112); background-repeat:no-repeat; background-position:center 0;}
+.S_content { min-height:400px; _height:400px; padding-bottom:20px;  }
+.WB_cardwrap{ margin:0 0 10px 0; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; -o-border-radius:2px; *zoom:1; box-shadow:0 0 2px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 2px rgba(0,0,0,0.2); -moz-box-shadow:0 0 2px rgba(0,0,0,0.2);}
+.S_bg2{ background:#fff;}
+.W_face_radius{ border-radius:50%;}
+/*各种分隔线和线框*/
+.W_linedot { border-bottom: dotted 1px #ccc; }
+/*各种分隔线和线框===========以下三个颜色一样*/
+.W_linecolor,.Grp_feed_list, .comment_list, .B_one_feed .comment_list, .B_one_feed_other .comment_list, .B_one_feed .tab_b,/*单条评论标题点划线*/ .B_one_feed_other .tab_b, .feed_list .expand div.vote .vote_text_list li, .big_comment_list dl.list, .Grp_feed_list, .user_atten, .declist, .W_rightModule, .interPer .pop_users .line, .index_title h3, .feed_list .expand p, .feed_list .repeat .more, .feed_list .expand div.extend, .feed_list .expand div.extend .participation, .feed_list .expand div.extend .interest, .feed_list .expand div.vote, .Grp_comment_list, .Grp_feed_list .repeat .more, .Grp_feed_list .expand p, .send_private_msg .send_p_list .send_list li, .send_private_msg .send_handle, a.magic_thumb,/*feed里魔法表情框*/ .photos_list ul li a,/*profile区相册预览*/ .suggested_follows .bg, .profile_album .photo_list dt a, .user_atten li, .S_line3{ border-color:#d9d9d9; }
+/*.W_vline,小竖线*/
+.W_sline, .W_arrline,/*feed三角边框*/ .W_arrline_mini/*右侧三角边框*/ { color:#d9d9d9; }
+.W_bgcolor_mini, .W_pages_minibtn a:hover,/*分页滑上*/ .W_pages_comment a:hover/*分页滑上*/ { background-color:#ddd; }
+/*feed区域转发、评论色块===========以下两个颜色一样*/
+.W_bgcolor, .big_comment_list .feed_repeat, .comment_list .repeat,.Grp_feed_list .comment, .feed_lists .favorites, .feed_list .repeat, .Grp_feed_list .repeat, .nfBox .tag_show li a.tag:hover, .tab_c .current, .tab_second, .person_info_list dt, .interPer .mf_cont,/*右侧感兴趣的人*/ .topic_list .tpc_dtl_cont,/*all-in-one背景色*/ .activities_list .tpc_dtl_cont,/*可能感兴趣的活动展开*/ .topic_block ul .hover,/*右侧关注的话题滑上色*/ .icon_mbmore,/*右侧手机icon条*/ .M_rightNote,/*右侧小提示*/ .M_activities .Actpic,/*可能感兴趣的活动背景色*/ .photos_list ul li.up_info a,/*profile相册*/ .suggested_follows .title, .suggested_follows .func, .W_pages_minibtn a,/*分页*/ .W_pages_comment a,/*分页*/ .private_SRLr .content,/*我的对话框背景色*/ .notice_board .notice_board_cont/*右侧公告栏背景色*/ { background:#f3f3f3; }
+.W_bgcolor_arrow, .big_comment_list .feed_repeat .arrow span, .comment_list .repeat .arrow span, .feed_list .comment dd.arrow span, .feed_list .repeat .arrow span, .Grp_feed_list .comment dd.arrow span, .Grp_feed_list .repeat .arrow span, .interPer .mutual_friend .arrow span, .interPer .pop_users .arrow span, .topic_list .tpc_dtl .arrow span, .activities_list .tpc_dtl .arrow span, .notice_board .arrow span { color:#f3f3f3; }
+
+/*三角*/
+.W_arrow{}
+.W_arrow_bor_t i, .W_arrow_bor_t em { _border-style: dashed dashed solid dashed; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent;}
+.W_arrow_bor i, .W_arrow_bor em { display:inline-block; width:0; height:0; border-width:7px; border-style:solid; overflow:hidden; font-size:0; line-height:0; vertical-align:top; }
+.S_bg1_br{ border-color:#f2f2f5;}
+/* /skin */
+
+/*字体图标*/
+.W_ficon {
+	font-family: "wbficonregular";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+}
+.ficon_arrow_left, .ficon_arrow_right {
+	vertical-align:1px;
+}
+@font-face {
+font-family: 'wbficonregular';
+src: url("../../images_v6/common/font/wbficon.eot?id=201409251522");
+src: url("../../images_v6/common/font/wbficon.eot?id=201409251522#iefix") format('embedded-opentype'), url("../../images_v6/common/font/wbficon.svg?id=201409251522") format('svg'), url("../../images_v6/common/font/wbficon.woff?id=201409251522") format('woff'), url("../../images_v6/common/font/wbficon.ttf?id=201409251522") format('truetype');
+src: url("../../images_v6/common/font/wbficon.eot?id=201409251522") \9;
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+/* 360 */
+.icon_360 { background-position:0 -312px; width:16px; height:16px;}
+/* 登录按钮 */
+.login_btn { display:block; background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat; _background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat; width:67px; height:32px; text-indent:-9999px; outline:none;}
+.login_btn:hover { background-position:-68px 0; }
+.regist_btn { display:block; background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat 0 -32px; _background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat 0 -32px; width:231px; height:43px; text-indent:-9999px; outline:none;}
+.regist_btn:hover { background-position:0 -75px; }
+.login_btn2 { display:block; background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat 0 -118px; _background:url(../../images/common/login_btn.png?id=1358945747143) no-repeat 0 -118px; width:87px; height:32px; text-indent:-9999px; outline:none;}
+.login_btn2:hover { background-position:-88px -118px; }
+
+
+/* tips */
+
+.search_ctips  { display:inline-block; float:left; background:#e6f2f8; margin:0 5px 5px 0; padding:0px 5px 0px 8px; _padding:5px 5px 3px 8px; border: solid 1px #d9e8ef; border-radius:2px; line-height:21px; *white-space:nowrap; *height:21px; _height:14px; _overflow:hidden;}
+.search_ctips a:hover{text-decoration: none;}
+.search_ctips .W_close_color { margin-left:1px; vertical-align:middle;}
+
+/* tips */
+.search_ctips2 {display:inline-block; float:left; margin:0 5px 5px 0; padding:0px 5px 0px 5px; _padding:3px 5px 0px 8px;  line-height:24px; *white-space:nowrap; _overflow:hidden; font-size:14px; position:relative; width:132px; _width:125px; height:24px; overflow:hidden;}
+.search_ctips2 .icon_tipsclose { margin-left:1px; vertical-align:middle; visibility:hidden; position:absolute; right:5px; top:9px;}
+.search_ctips2 .ctips_txt { width:115px; height:24px; overflow:hidden;}
+.search_ctips2:hover,.search_ctips2_hover   { background:#e6f4fc; }
+.search_ctips2:hover .icon_tipsclose, .search_ctips2_hover .icon_tipsclose { visibility:visible;}
+
+/* tips */
+.search_ctips3 {display:inline-block; float:left; margin:0 0 5px 0; padding:0px 5px 0px 8px; _padding:0px 5px 0px 8px;  line-height:24px; *white-space:nowrap; _overflow:hidden; font-size:14px; position:relative; width:172px; height:24px; overflow:hidden;}
+.search_ctips3 .icon_tipsclose { margin-left:1px; vertical-align:middle; visibility:hidden; position:absolute; right:5px; top:9px;}
+.search_ctips3 .icon_tipssearch { margin-left:1px; vertical-align:middle; visibility:hidden; position:absolute; right:16px; top:8px;}
+.search_ctips3 .ctips_txt { width:160px; height:24px; overflow:hidden;}
+.search_ctips3:hover,.search_ctips3_hover   { background:#e6f4fc; }
+.search_ctips3:hover .icon_tipsclose, .search_ctips3_hover .icon_tipsclose, .search_ctips3:hover .icon_tipssearch, .search_ctips3_hover .icon_tipssearch { visibility:visible;}
+.search_ctips3 .ctips_num { margin:0 5px; font-size:11px; font-weight:normal;}
+/*face 图标*/
+.ficon_face{ font-size:20px; margin-right:5px; color:#ffa405;}
+
+/* 理由气泡 */
+.person_reason, .person_reason .related { display: inline-block; background: url(../../images/common/reason.png?id=1358945747143) no-repeat 0 0; height: 24px; padding: 0 9px; }
+.person_reason .related {  background-position: right -25px; padding-top: 4px; line-height: 20px; color: #666; }
+
+.person_reason .ralated_text { display:inline-block;line-height:20px; background:#efefef;}
+
+/*整体结构*/
+.S_main_bg { width:1000px; margin:0 auto; padding-top:76px; }
+.S_content { margin-top:22px; }
+.S_sigcon { background:#fff; margin-top:22px; }
+/*两栏布局*/
+.S_content_l { float:left; width:690px; margin-right:10px;}
+.S_content_r { float:right; width:300px;  }
+/* frame patch */
+.search_topcon { margin:7px 0 0 0; width:508px; height:19px; }
+.search_page { float:right; }
+.module_border { border-bottom:1px solid #f0f1f2; }
+.bottom_search { margin-bottom:10px; }
+.bottom_search .search_input .searchInp_box{ width:580px;}
+.search_feedback { margin:0 40px 0; line-height:15px; }
+.module_history .W_arrow { line-height:12px; display:inline-block; -webkit-transform: rotate(90deg); writing-mode:tb-rl; -moz-transform: rotate(90deg); -o-transform:rotate(90deg); margin:0 0 0 5px; font-size:14px; cursor:pointer; color:#a3a3a3;}
+
+
+
+/* 热搜榜导航icon */
+.ranknav_icon { display:inline-block; background:url(../../images_v6/common/search_ico_1.png) no-repeat; width:16px; height:16px;}
+.rankicon_index { background-position:-46px -109px;}
+.rankicon_all { background-position:-46px -141px;}
+.rankicon_practical { background-position:-46px -172px;}
+.rankicon_film { background-position:-46px -202px;}
+.rankicon_finance { background-position:-46px -232px; height:17px;}
+.rankicon_famous { background-position:-46px -264px; height:17px;}
+.rankicon_sports { background-position:-46px -297px;}
+.rankicon_pic { background-position: -71px -106px;}
+.rankicon_movie { background-position: -71px -131px;}
+.rankicon_material { background-position: -71px -156px;}
+.rankicon_shishi { background-position: -46px -328px; }
+.rankicon_friends {background-position: -76px -327px; }
+.rankicon_tide { background:url(../../images_v6/common/icon_7.png) no-repeat;}
+
+/*V5 skin*/
+.S_bg1 {background-color: #f2f2f5;}
+.S_line1,.S_line2{border-color:#d9d9d9;}
+
+/*搜索结果数*/
+.search_num{ float:left; color:#999; position:absolute; left:14px; top:12px;}
+.search_num_single{ height:38px; line-height:38px; text-align:center; color:#999;}
+
+#js_appstyle_searchV45_css_v6_module_general{height:42px;}
